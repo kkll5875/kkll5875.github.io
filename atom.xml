@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-11-02T05:57:10.287Z</updated>
+  <updated>2024-08-30T04:57:57.169Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="http://example.com/2024/08/22/RuoYi%E6%9C%80%E6%96%B0%E7%89%88SQL%E6%B3%A8%E5%85%A5/"/>
+    <id>http://example.com/2024/08/22/RuoYi%E6%9C%80%E6%96%B0%E7%89%88SQL%E6%B3%A8%E5%85%A5/</id>
+    <published>2024-08-22T06:33:56.261Z</published>
+    <updated>2024-08-30T04:57:57.169Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Ruoyi"><a href="#Ruoyi" class="headerlink" title="Ruoyi &lt;&#x3D; 4.7.9 SQL injection"></a>Ruoyi &lt;&#x3D; 4.7.9 SQL injection</h2><p>repositories：<a href="https://github.com/yangzongzhuan/RuoYi">https://github.com/yangzongzhuan/RuoYi</a></p><p>website：<a href="https://ruoyi.vip/">https://ruoyi.vip/</a></p><p>version：Ruoyi&lt;&#x3D;4.7.9</p><p>code position：package com.ruoyi.common.utils.sql.SqlUtil.java</p><p>Issue 1: Incomplete Parameter Filtering: The project only filters common error injection keywords and commonly used SQL injection keywords. However, it does not filter keywords like floor, which allows for the construction of a proof of concept (PoC) using keywords like floor to achieve error-based injection.</p><p>Issue 2: Bypassing Keyword Filtering: When filtering common keywords like select, insert, etc., the system matches these keywords only when they are followed by a space. This allows an attacker to bypass the filtering by using &#x2F;**&#x2F; to separate the keywords.</p><p>request: post &#x2F;tool&#x2F;gen&#x2F;createTable , parameter: sql</p><p>my blog：<a href="https://h-sec-research.blogspot.com/2024/08/ruoyi-479-sql-injection.html">https://h-sec-research.blogspot.com/2024/08/ruoyi-479-sql-injection.html</a></p>]]></content>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;Ruoyi&quot;&gt;&lt;a href=&quot;#Ruoyi&quot; class=&quot;headerlink&quot; title=&quot;Ruoyi &amp;lt;&amp;#x3D; 4.7.9 SQL injection&quot;&gt;&lt;/a&gt;Ruoyi &amp;lt;&amp;#x3D; 4.7.9 SQL injection&lt;/h2&gt;&lt;p&gt;repositories：&lt;a href=&quot;https://github.com/yangzongzhuan/RuoYi&quot;&gt;https://github.com/yangzongzhuan/RuoYi&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;website：&lt;a href=&quot;https://ruoyi.vip/&quot;&gt;https://ruoyi.vip/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;version：Ruoyi&amp;lt;&amp;#x3D;4.7.9&lt;/p&gt;
+&lt;p&gt;code position：package com.ruoyi.common.utils.sql.SqlUtil.java&lt;/p&gt;
+&lt;p&gt;Issue 1: Incomplete Parameter Filtering: The project only filters common error injection keywords and commonly used SQL injection keywords. However, it does not filter keywords like floor, which allows for the construction of a proof of concept (PoC) using keywords like floor to achieve error-based injection.&lt;/p&gt;
+&lt;p&gt;Issue 2: Bypassing Keyword Filtering: When filtering common keywords like select, insert, etc., the system matches these keywords only when they are followed by a space. This allows an attacker to bypass the filtering by using &amp;#x2F;**&amp;#x2F; to separate the keywords.&lt;/p&gt;
+&lt;p&gt;request: post &amp;#x2F;tool&amp;#x2F;gen&amp;#x2F;createTable , parameter: sql&lt;/p&gt;
+&lt;p&gt;my blog：&lt;a href=&quot;https://h-sec-research.blogspot.com/2024/08/ruoyi-479-sql-injection.html&quot;&gt;https://h-sec-research.blogspot.com/2024/08/ruoyi-479-sql-injection.html&lt;/a&gt;&lt;/p&gt;
+</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>ActiveMQ漏洞研究</title>

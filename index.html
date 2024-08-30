@@ -137,6 +137,41 @@
 <div class="row">
 	<div class="col-md-8">
 		<h3 class="title">
+			<a href="/2024/08/22/RuoYi最新版SQL注入/" ></a>
+		</h3>
+		</div>
+	<div class="col-md-4">
+		<div class="date">post @ 2024-08-22  </div>
+		</div>
+	</div>
+	
+
+
+			<div class="entry">
+  <div class="row">
+	
+	
+		<h2 id="Ruoyi"><a href="#Ruoyi" class="headerlink" title="Ruoyi &lt;&#x3D; 4.7.9 SQL injection"></a>Ruoyi &lt;&#x3D; 4.7.9 SQL injection</h2><p>repositories：<a target="_blank" rel="noopener" href="https://github.com/yangzongzhuan/RuoYi">https://github.com/yangzongzhuan/RuoYi</a></p>
+<p>website：<a target="_blank" rel="noopener" href="https://ruoyi.vip/">https://ruoyi.vip/</a></p>
+<p>version：Ruoyi&lt;&#x3D;4.7.9</p>
+<p>code position：package com.ruoyi.common.utils.sql.SqlUtil.java</p>
+<p>Issue 1: Incomplete Parameter Filtering: The project only filters common error injection keywords and commonly used SQL injection keywords. However, it does not filter keywords like floor, which allows for the construction of a proof of concept (PoC) using keywords like floor to achieve error-based injection.</p>
+<p>Issue 2: Bypassing Keyword Filtering: When filtering common keywords like select, insert, etc., the system matches these keywords only when they are followed by a space. This allows an attacker to bypass the filtering by using &#x2F;**&#x2F; to separate the keywords.</p>
+<p>request: post &#x2F;tool&#x2F;gen&#x2F;createTable , parameter: sql</p>
+<p>my blog：<a target="_blank" rel="noopener" href="https://h-sec-research.blogspot.com/2024/08/ruoyi-479-sql-injection.html">https://h-sec-research.blogspot.com/2024/08/ruoyi-479-sql-injection.html</a></p>
+
+	
+	</div>
+  <a type="button" href="/2024/08/22/RuoYi最新版SQL注入/#more" class="btn btn-default more">Read More</a>
+</div>
+
+		
+			
+	
+	<!-- display as entry -->
+<div class="row">
+	<div class="col-md-8">
+		<h3 class="title">
 			<a href="/2023/11/02/activeMQAttack/" >ActiveMQ漏洞研究</a>
 		</h3>
 		</div>
@@ -210,6 +245,10 @@
   <ul class="entry list-unstyled">
     
       <li>
+        <a href="/2024/08/22/RuoYi最新版SQL注入/" ><i class="fa fa-file-o"></i></a>
+      </li>
+    
+      <li>
         <a href="/2023/11/02/activeMQAttack/" ><i class="fa fa-file-o"></i>ActiveMQ漏洞研究</a>
       </li>
     
@@ -240,7 +279,7 @@
   <div class="container-narrow">
   <footer> <p>
   
-  &copy; 2023 Hello's Blog
+  &copy; 2024 Hello's Blog
   
       powered by <a href="http://hexo.io/" target="_blank">Hexo</a>.Theme <a href="https://github.com/Ares-X/hexo-theme-freemind.bithack" target="_blank">freemind.bithack</a>  
 </p>
